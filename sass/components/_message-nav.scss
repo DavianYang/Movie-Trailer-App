@@ -1,0 +1,93 @@
+.message-nav {
+    font-size: 1.1rem;
+    list-style-type: none;
+    padding: 1.5rem 0;
+
+    @include respond(tab-land-2){
+        font-size: inherit;
+    }
+
+    &__item {
+        padding: 1rem 2rem;
+
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+
+    }
+
+    &__heading {
+        padding: 1.5rem 3rem;
+        text-align: left;
+        position: relative;
+        &--main {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $color-grey-light-3;
+            padding: 1.5rem 0 0;
+            border-top: 1px solid $color-grey-dark-2;
+        }
+    }
+
+    &__notification {
+        background-color: $color-primary;
+        color: #fff;
+        border-radius: 50%;
+        height: 1.75rem;
+        width: 1.75rem;
+        position: absolute;
+        top: 3.5rem;
+        right: 37%;
+        font-size: .8rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include respond(tab-land-2){
+            display: none;
+        }
+    }
+
+    &__user-box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__photo {
+        width: 3.75rem;
+        height: 3.75rem;
+        border: none;
+        margin:0 1rem;
+        border-radius: 50%;
+
+        @include respond(tab-land-2){
+            margin: 0;
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-primary;
+        font-weight: 900;
+        letter-spacing: .1rem;
+    }
+
+    &__link--movie:link,
+    &__link--movie:visited {
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 1.2rem;
+    }
+
+    &__message {
+        font-weight: 700;
+        color: $color-grey-light-3;
+        @include respond(tab-land-2){
+            margin-left: 2rem;
+        }
+    }
+}

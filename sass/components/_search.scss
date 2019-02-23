@@ -1,0 +1,63 @@
+.search {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(tab-port-2){
+        flex: 0 0 30%;
+    }
+
+    @include respond(phone-sm){
+        margin-right: 1rem;
+    }
+
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: $color-grey-light-2;
+        width: 90%;
+        border: none;
+        border-radius: 10rem;
+        margin-right: -3.25rem;
+        padding: .7rem 2rem;
+        transition: all .2s;
+
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: $color-grey-light-3;
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 300;
+            color: $color-grey-light-4;
+        }
+    }
+
+    &__button{
+        border: none;
+        background-color: $color-grey-light-3;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
+
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: currentColor;
+
+        @include respond(phone-sm){
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+    }
+}

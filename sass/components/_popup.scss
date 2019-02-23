@@ -1,0 +1,125 @@
+.popup {
+    background-color: rgba($color-dark, $alpha: .9);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background-color: rgba($color-dark, $alpha: .3);
+    }
+
+    &__content {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 75%;
+     background-color: $color-grey-light-1;
+     overflow: hidden;
+     border-radius: 3px;
+    }
+
+    &__img-box {
+        position: relative;
+    }
+
+    &__close {
+        &:link,
+        &:visited {
+            color: $color-grey-dark-1;
+            text-decoration: none;
+            line-height: 1;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            display: inline-block;
+            transition: all .2s;
+            font-size: 3rem;
+            z-index: 999;
+        }
+
+        &:hover{
+            color: $color-primary-light;
+        }
+    }
+
+
+    &__iframe{
+        width: 100%;
+        height: 25rem;
+        
+    }
+
+    &__profile {
+
+        &--img {
+            height: 15rem;
+            width: 15rem;
+            border-radius: 50%;
+            border: 3px solid $color-primary-light;
+            position: relative;
+            display: block;
+            z-index: 9;
+            margin-top: -8rem;
+            margin-left: 2rem;
+        }
+    }
+
+    &__description {
+        display: flex;
+        padding: 0 3rem 5rem;
+    }
+
+    &__text-box {
+        margin-left: 2rem;
+    }
+
+    &__heading {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        padding: 1rem 0;
+
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+    }
+
+    &__genres {
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+
+    &__casts {
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+
+    // Open state 
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+}

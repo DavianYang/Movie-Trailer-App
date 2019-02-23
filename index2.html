@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aneth || Movie Trailer App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+</head>
+<body id="body">
+
+    <div class="container-movie" id="container-movie">
+
+            <div class="navigation">
+                    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        
+                    <label for="navi-toggle" class="navigation__button">
+                        <span class="navigation__icon">&nbsp;</span>
+                    </label>
+        
+                    <div class="navigation__background">&nbsp;</div>
+        
+                    <nav class="navigation__nav">
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>New Releases</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Trending</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Coming Soon</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Watch Later</a></li>
+                            </ul>
+                    </nav>
+                </div>
+
+    <nav class="sidebar">
+        <div class="side">
+            <div class="side-logo">
+                <span class="side-logo__span">
+                    Aneth
+                </span>
+            </div>
+
+            <ul class="side-nav">
+                <li class="side-nav__item side-nav__item">
+                    <a href="#" class="side-nav__link"><span>New Releases</span></a>
+                </li>
+
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link"><span>Trending</span></a>
+                </li>
+
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link"><span>Coming Soon</span></a>
+                </li>
+
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link"><span>Watch Later</span></a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="legal">
+            &copy; 2019 by Thant Yar Zar Hein. All rights reserved.
+        </div>
+    </nav>
+
+    <div class="content">
+        <header class="header">
+            <span class="logo">New Releases</span>
+
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Search movies">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+
+            <nav class="user-nav">                    
+                    <div class="user-nav__icon-box">
+                            <svg class="user-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-bell"></use>
+                                <span class="user-nav__notification">5</span>
+                            </svg>
+                        </div>
+        
+                    <div class="user-nav__icon-box">
+                            <img src="img/profile.jpg" alt="Photo of A User" class="user-nav__user-photo">
+                            <span class="user-nav__user-name">Thant Yar</span>
+                    </div>
+            </nav>
+
+        </header>
+
+        <main class="movie-detail-view">
+            <div class="container">
+            <div class="row" id="viewport">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="movie-detail-view__box">
+
+  
+                    <img src="img/movie_background-9.jpg" alt="" class="movie-detail-view__photo">
+                        <div class="back">
+                            <a href="#" class="back__link">
+                                    <svg class="back__icon">
+                                        <use xlink:href="img/sprite.svg#icon-reply"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="movie-detail-view__background">
+                                    <div class="movie-detail">
+                                        <div class="movie-detail__poster">
+                                            <a href="#" class="movie-detail__link-poster" data-id="{{this.id}}"><img src="img/movie-9.jpg" class="movie-detail__image" alt="Movie Photo"></a>
+                                        </div>
+                
+                                        <div class="movie-detail__container">
+                                            <h2 class="movie-detail__heading">
+                                                Spider-Man: Into the Spider-Verse
+                                            </h2>
+                
+                                            <ul class="movie-detail__icon-list">
+                                                <li><a href="#" class="movie-detail__link">
+                                                    <svg class="movie-detail__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-list"></use>
+                                                    </svg>
+                                                </a></li>
+                                                <li><a href="#" class="movie-detail__link">
+                                                    <svg class="movie-detail__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-heart-outlined"></use>
+                                                    </svg>
+                                                </a></li>
+                                                <li><a href="#" class="movie-detail__link">
+                                                    <svg class="movie-detail__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                                                    </svg>
+                                                </a></li>
+                                                <li><a href="#" class="movie-detail__link">
+                                                    <svg class="movie-detail__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </a></li>
+                                                <li><a href="#" class="movie-detail__link">
+                                                        <svg class="movie-detail__icon">
+                                                            <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                                                        </svg>
+                                                    </a></li>
+                                            </ul>
+                
+                                            <div class="movie-detail__overview">
+                                                <span>Overview :</span>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quam, quos animi deserunt ea blanditiis iusto, expedita possimus quis, quae fuga hic. Iste aliquam dicta excepturi incidunt laboriosam earum maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, architecto cumque?
+                                            </div>
+                
+                                            <div class="movie-detail__generes">
+                                                <span>Generes :</span> Animation, Family, Adventure
+                                            </div>
+                
+                                            <div class="movie-detail__production-companies">
+                                                    <span>Production Companies :</span> Mad Hatter Entertainment, DreamWorks Animation
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- <div class="movie-detail-view__gallery">
+                                    <figure class="movie-detail-view__gallery--item">
+                                            <img src="img/movie-9.jpg" alt="Photo of Hotel 1" class="movie-detail-view__gallery--photo">
+                                        </figure>
+                
+                                        <figure class="movie-detail-view__gallery--item">
+                                            <img src="img/movie_background-9.jpg" alt="Photo of Hotel 1" class="movie-detail-view__gallery--photo">
+                                        </figure>
+                
+                                        <figure class="movie-detail-view__gallery--item">
+                                            <img src="img/movie_post-9.jpg" alt="Photo of Hotel 1" class="movie-detail-view__gallery--photo">
+                                        </figure>
+                            </div> -->
+
+                        </div>
+                </div>
+
+
+            </div>
+            </div>
+            </main>
+    </div>
+
+    <!-- <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__img-box">
+                    <a href="#container-movie" class="popup__close">&times;</a>
+                <div class="popup__background">
+                    <iframe class="popup__iframe" src="https://www.youtube.com/embed/neXkzLDwnIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="popup__description">
+                    <div class="popup__profile">
+                            <img src="img/movie-1.jpg" alt="Photo of Movie" class="popup__profile--img">
+                    </div>
+                    <div class="popup__text-box">
+                <h2 class="popup__heading">Reign of the Supermen</h2>
+                <div class="popup__genres">Science Fiction, Action</div>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eius mollitia optio nulla adipisci voluptatum cupiditate ipsa praesentium, cumque similique ut beatae vel quidem exercitationem tempora incidunt hic magni ratione Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quidem hic minima quo ipsam, eum voluptatibus harum blanditiis quisquam esse ex tenetur ducimus. Quasi suscipit provident adipisci itaque quo exercitationem.
+                </p>
+                <div class="popup__casts">Jerry O'Connell, Rebecca Romijn, Rainn Wilson</div>
+            </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <template id="template-content-list">
+        <div class="col-lg-3 col-md-4 col-sm-4">
+                <div class="movie">
+                        <span class="movie__rating">{{this.rating}}</span>
+                        <div class="movie__img-box">
+                            <div class="movie__background">&nbsp;</div>
+                            <figure>
+                               <a href="#" class="detail-view" id="movie__link" data-id="{{this.id}}"><img src="{{this.poster}}" alt="Movie Photo" class="movie__img"></a>
+                                <figcaption class="movie__icon">
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="movie__heading">
+                            <h2 class="movie__heading--main">{{this.title}}</h2>
+                            <h4 class="movie__heading--sub--1">Release Date: {{this.release_date}}</h4>
+                        </div>
+                </div>
+        </div>
+    </template> -->
+
+    <!-- <template id="template-popup">
+        <div class="popup__content">
+            <div class="popup__img-box">
+                    <a href="#container-movie" class="popup__close">&times;</a>
+                <div class="popup__background">
+                    <iframe class="popup__iframe" src="https://www.youtube.com/embed/neXkzLDwnIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="popup__description">
+                    <div class="popup__profile">
+                            <img src="img/movie-1.jpg" alt="Photo of Movie" class="popup__profile--img">
+                    </div>
+                    <div class="popup__text-box">
+                <h2 class="popup__heading">Reign of the Supermen</h2>
+                <div class="popup__genres">Science Fiction, Action</div>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eius mollitia optio nulla adipisci voluptatum cupiditate ipsa praesentium, cumque similique ut beatae vel quidem exercitationem tempora incidunt hic magni ratione Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quidem hic minima quo ipsam, eum voluptatibus harum blanditiis quisquam esse ex tenetur ducimus. Quasi suscipit provident adipisci itaque quo exercitationem.
+                </p>
+                <div class="popup__casts">Jerry O'Connell, Rebecca Romijn, Rainn Wilson</div>
+            </div>
+            </div>
+        </div>
+    </template> -->
+
+</div>
+
+<script src="js/app2.js" type="module"></script>
+</body>
+</html>
+
+<!-- <svg class="movie__icon-svg">
+                                                <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                                            </svg> -->
